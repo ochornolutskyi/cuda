@@ -1,0 +1,98 @@
+@import "veriables";
+
+.header {
+  width: 100%;
+  background-color: #87509c;
+  .content-wrap {
+    // min-height: 595px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-head {
+      max-width: 1035px;
+      width: 100%;
+      margin-top: 42px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &__logo {
+        width: 117px;
+        height: 37px;
+        .logo {
+          width: 100%;
+          height: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__nav {
+        height: 100%;
+        flex-basis: 450px;
+        flex-shrink: 1;
+        .nav-ul {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          &__li {
+            padding: 0 17px;
+            border-radius: 5px;
+            cursor: pointer;
+            &-a {
+              width: 100%;
+              height: 100%;
+              color: $font-color-primary1;
+              font-size: 16px;
+              line-height: 37px;
+              text-transform: uppercase;
+            }
+          }
+          &__li:hover {
+            background-color: #643a79;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+    .header-content {
+      max-width: 906px;
+      width: 100%;
+      margin-top: 147px;
+      margin-bottom: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        max-width: 906px;
+        width: 100%;
+        font-size: 42.2px;
+        color: #f7f3ea;
+        line-height: 44px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 54px;
+      }
+      &__button {
+        max-width: 295px;
+        width: 100%;
+        height: 70px;
+        background-color: #eb7d4b;
+        border: none;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.14);
+        border-radius: 5px;
+        color: $font-color-primary1;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+}

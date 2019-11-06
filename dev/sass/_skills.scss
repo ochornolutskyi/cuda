@@ -1,0 +1,112 @@
+@import "veriables";
+
+.skills {
+  background-color: #fff;
+  &-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .skills-header {
+    margin-top: 117px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      margin-bottom: 21px;
+      font-size: 37px;
+      text-transform: uppercase;
+      line-height: 29px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: $font-color-primary2;
+      text-align: center;
+    }
+    &__note {
+      max-width: 568px;
+      max-height: 45px;
+      margin-top: 23px;
+      font-size: 17px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      color: $font-color-primary2;
+      text-align: center;
+    }
+  }
+  .skills-content {
+    width: 100%;
+    min-height: 210px;
+    margin-top: 84px;
+    margin-bottom: 122px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: $font-color-primary2;
+    text-align: center;
+    &__item {
+      flex-basis: 160px;
+      height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0 auto;
+      .progress {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        &-base {
+          width: inherit;
+          height: inherit;
+          position: absolute;
+        }
+        &-current {
+          width: inherit;
+          height: inherit;
+          position: absolute;
+          z-index: 5;
+        }
+        &-percent {
+          height: inherit;
+          position: relative;
+          z-index: 10;
+          font-size: 42px;
+          line-height: 160px;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          color: #3c4761;
+          margin: 0 auto;
+          span {
+            display: inline-block;
+          }
+          .percent-span {
+            display: inline-block;
+            font-size: 28px;
+          }
+        }
+        &-title {
+          font-size: 21px;
+          line-height: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.02em;
+          color: $font-color-primary2;
+        }
+      }
+    }
+    &__item:nth-child(3) {
+      flex-basis: auto;
+      width: 182px;
+      .progress-current {
+        width: 153px;
+        right: 0;
+      }
+    }
+  }
+}
