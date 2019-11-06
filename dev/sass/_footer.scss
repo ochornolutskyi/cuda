@@ -1,6 +1,30 @@
-// .footer {
-//   width: 100%;
-//   max-height: 112px;
-//   height: 100%;
-//   background-color: #344b8e;
-// }
+.footer {
+  width: 100%;
+  min-height: 112px;
+  background-color: #344b8e;
+  .content-wrap {
+    max-width: 938px;
+    width: 100%;
+    padding-top: 48px;
+    .footer-links {
+      width: 100%;
+      //twi color: #30bae7
+      &__ul {
+        width: 100%;
+        margin-bottom: 51px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .footer-links__li {
+          &-a {
+            font-size: 24px;
+            line-height: 23px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

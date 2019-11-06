@@ -1,0 +1,103 @@
+@import "veriables";
+
+.about {
+  background-color: #d74680;
+  .content-wrap {
+    max-width: 1099px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    .about-header {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        margin-bottom: 21px;
+        font-size: 40px;
+        line-height: 29px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+        text-align: center;
+      }
+      &__note {
+        margin-top: 23px;
+        font-size: 18px;
+        line-height: 15px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+    .about-content {
+      width: 100%;
+      margin-top: 71px;
+      margin-bottom: 128px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: #fff;
+      text-align: left;
+      &__slider {
+        width: 100%;
+        min-height: 484px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        .about-slide {
+          max-width: 510px;
+          min-height: 168px;
+          margin: 0 auto;
+          flex-basis: 470px;
+          flex-shrink: 1;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: row;
+          &__photo {
+            width: 96px;
+            height: 96px;
+            margin-right: 48px;
+            border-radius: 50%;
+          }
+          &__info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            &-text {
+              margin-bottom: 28px;
+              font-size: 18px;
+              line-height: 28.3px;
+              font-weight: 400;
+              font-style: italic;
+              letter-spacing: 0.02em;
+              color: #fff;
+            }
+            &-name {
+              margin-bottom: 9px;
+              font-size: 24px;
+              line-height: 18px;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.02em;
+              color: #fff;
+            }
+            &-position {
+              font-size: 18px;
+              line-height: 17px;
+              font-weight: 400;
+              letter-spacing: 0.02em;
+              color: #ffdd99;
+            }
+          }
+        }
+      }
+    }
+  }
+}
