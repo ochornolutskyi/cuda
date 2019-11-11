@@ -44,10 +44,11 @@
             padding: 0 17px;
             border-radius: 5px;
             cursor: pointer;
+            margin: 0 auto;
             &-a {
               width: 100%;
               height: 100%;
-              color: $font-color-primary1;
+              color: #fff;
               font-size: 16px;
               line-height: 37px;
               text-transform: uppercase;
@@ -56,6 +57,10 @@
           &__li:hover {
             background-color: #643a79;
             transition: all 0.5s ease;
+          }
+          &__li:active {
+            background-color: rgba(100, 58, 121, 0.65);
+            transition: none;
           }
         }
       }
@@ -86,7 +91,7 @@
         border: none;
         border-bottom: 4px solid rgba(0, 0, 0, 0.14);
         border-radius: 5px;
-        color: $font-color-primary1;
+        color: #fff;
         font-size: 18px;
         line-height: 26px;
         font-weight: 600;
@@ -94,6 +99,13 @@
         letter-spacing: 0.02em;
       }
       &__button:hover {
+        background-color: #e86c34;
+        transition: 0.3s all ease;
+      }
+      &__button:active {
+        background-color: rgba(232, 108, 52, 0.85);
+        transition: none;
+        // box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4) inset;      }
       }
     }
   }

@@ -78,7 +78,7 @@
           font-weight: 400;
           color: #fff;
         }
-        #contact-form__button {
+        &__button {
           width: 293px;
           height: 70px;
           margin: 0 auto;
@@ -93,14 +93,21 @@
           color: #ffffff;
           text-transform: uppercase;
         }
+        &__button:hover {
+          background-color: #2ba7cf;
+        }
+        &__button:active {
+          background-color: rgba(43, 167, 207, 0.65);
+          transition: none;
+        }
       }
       input::placeholder,
       textarea::placeholder {
         font-size: 18, 16px;
         font-weight: 400;
         color: #fff;
-        //color: #ff4444;
-        opacity: 1;
+        //color: #ff4444; - for *
+        //opacity: 1;
       }
     }
   }

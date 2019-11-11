@@ -53,6 +53,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         .galleryNav__button {
           min-height: 38px;
           flex-basis: 84px;
@@ -67,9 +68,15 @@
           color: #393939;
         }
         .galleryNav__button:hover {
-          background-color: #fff;
+          box-shadow: inset 0px 0px 25px 0px rgba(255, 255, 255, 0.75);
           transition: all 0.5s ease;
           border-radius: 3px;
+          transition: all 0.3s ease;
+        }
+        .galleryNav__button.active {
+          background-color: #fff;
+          border-radius: 3px;
+          box-shadow: none;
         }
       }
       &__gallery {
@@ -113,6 +120,14 @@
           font-weight: 600;
           letter-spacing: 0.02em;
           color: #fff;
+        }
+        .gallery-button:hover {
+          background-color: #14ae93;
+          transition: all 0.5s ease;
+        }
+        .gallery-button:active {
+          background-color: rgba(20, 174, 147, 0.85);
+          transition: none;
         }
       }
     }
