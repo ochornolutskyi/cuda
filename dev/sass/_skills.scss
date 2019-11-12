@@ -1,5 +1,3 @@
-@import "veriables";
-
 .skills {
   background-color: #fff;
   .content-wrap {
@@ -41,9 +39,8 @@
     margin-top: 84px;
     margin-bottom: 122px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     color: #3c4761;
     text-align: center;
     &__item {

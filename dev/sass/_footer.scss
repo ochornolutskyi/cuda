@@ -13,7 +13,7 @@
         margin-bottom: 51px;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         .footer-links__li {
           padding: 0 5px;
           flex-shrink: 1;

@@ -1,25 +1,9 @@
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .header {
     .content-wrap {
       padding: 15px;
       .header-head {
         margin-top: 10px;
-        flex-direction: column;
-        &__nav {
-          width: 100%;
-          margin-top: 25px;
-          flex-basis: 0;
-          .nav-ul {
-            &__li {
-              background-color: #643a79;
-              padding: 7px;
-              &-a {
-                font-size: 14px;
-                line-height: 18px;
-              }
-            }
-          }
-        }
       }
       .header-content {
         margin-top: 35px;
@@ -59,11 +43,9 @@
         width: 100%;
         margin-top: 45px;
         margin-bottom: 0;
-        flex-direction: column;
         &__item {
           margin: 0 auto;
           margin-bottom: 25px;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.25);
           &-image {
             height: auto;
             margin-bottom: 25px;
@@ -99,6 +81,7 @@
   }
   .team {
     .content-wrap {
+      min-height: auto;
       padding: 15px;
       .team-header {
         margin-top: 10px;
@@ -115,13 +98,11 @@
         }
       }
       .team-content {
-        flex-direction: column;
         margin-bottom: 0;
+        align-items: flex-start;
         &__teammate {
-          max-width: none;
           margin: 0 auto;
           margin-bottom: 25px;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.25);
           .profile-photo {
             &__img {
               max-width: 150px;
@@ -180,14 +161,11 @@
     }
     .skills-content {
       margin-top: 0;
-      flex-direction: column;
       margin-bottom: 0;
       &__item {
-        width: 100%;
         height: auto;
         flex-basis: auto;
         margin-bottom: 25px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
         .progress {
           margin: 0 auto;
           &-title {
@@ -197,10 +175,6 @@
             line-height: normal;
           }
         }
-      }
-      &__item:last-child {
-        margin-bottom: 0;
-        border-bottom: none;
       }
     }
   }
@@ -238,7 +212,7 @@
         &__gallery {
           width: 100%;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           .gallery-item {
             margin: 0 auto;
             flex-basis: auto;
@@ -255,7 +229,7 @@
             border-bottom: none;
           }
           .gallery-button {
-            width: 75%;
+            width: 35%;
             height: 50px;
             font-size: 16px;
             line-height: normal;
@@ -288,11 +262,9 @@
         margin-top: 0;
         margin-bottom: 0;
         &__slider {
-          flex-direction: column;
           align-items: center;
           .about-slide {
             margin: 0 auto;
-            flex-basis: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -352,10 +324,9 @@
         margin-top: 0;
         .contact-form {
           margin-bottom: 35px;
-          flex-direction: column;
           align-items: center;
           &__input {
-            max-width: none;
+            max-width: 45%;
             height: 35px;
             padding: 0 15px;
             margin-bottom: 15px;
@@ -370,7 +341,7 @@
             margin-bottom: 20px;
           }
           &__button {
-            width: 75%;
+            width: 35%;
             height: 50px;
             font-size: 16px;
             line-height: normal;
@@ -407,4 +378,11 @@
       }
     }
   }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1223px) {
+*{
+  .content-wrap{
+    padding: 15px;
+  }
+}
 }
