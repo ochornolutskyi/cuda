@@ -1,0 +1,24 @@
+<div id="contact" class="contact">
+  <div class="content-wrap">
+    <div class="contact-header">
+      <h2 class="contact-header__title">GET IN TOUCH</h2>
+      <div class="dividingLine"></div>
+      <div class="contact-header__note">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of
+        America.
+        <a class="contact-header__number" href="tel:+202456-1111">Tel: (202) 456-1111</a>
+      </div>
+    </div>
+    <div class="contact-content">
+      <div class="formErrorName"><%= contactErrorName %></div>
+      <div class="formErrorName"><%= contactErrorEmail %></div>
+      <div class="formErrorName"><%= contactErrorMessage %></div>
+      <form class="contact-form" method="POST" action="http://localhost:3000/">
+        <input class="contact-form__input" id="contact-form__name" type="text" name="username" placeholder="Your Name">
+        <input class="contact-form__input" id="contact-form__email" type="email" name="email" placeholder="Your Email">
+        <textarea class="contact-form__textarea" id="contact-form__message" name="text"
+          placeholder="Your Message"></textarea>
+        <input class="contact-form__button" id="contact-form__button" type="submit" value="SEND MESSAGE"></input>
+      </form>
+    </div>
+  </div>
+</div>

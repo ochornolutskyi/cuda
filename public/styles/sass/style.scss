@@ -1,0 +1,101 @@
+@import "reset";
+@import "footer-bottom";
+@import "header";
+@import "services";
+@import "team";
+@import "skills";
+@import "portfolio";
+@import "about";
+@import "contact";
+@import "footer";
+@import "media-queires(mobile)";
+@import "media-queires(pad)";
+
+@font-face {
+  font-family: "Titillium Web";
+  src: url("./../src/fonts/TitilliumWeb/TitilliumWeb.woff2") format("woff2"),
+    url("./../src/fonts/TitilliumWeb/TitilliumWeb.woff") format("woff"),
+    url("./../src/fonts/TitilliumWeb/TitilliumWeb.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Titillium Web", "Open Sans";
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+a:focus{
+  outline: none;
+}
+img {
+  display: block;
+}
+button {
+  padding: 0;
+  cursor: pointer;
+}
+button:focus{
+  outline: none;
+}
+.content-wrap {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.dividingLine {
+  width: 87px;
+  height: 4px;
+  opacity: 0.14;
+  background-color: #000000;
+}
+
+.error-block {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50vw;
+  min-height: 25vh;
+  padding: 15px;
+  background: rgba($color: #000, $alpha: 0.8);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  &__button {
+    margin-top: 15px;
+    width: 30%;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+  }
+}
+.scrollUp {
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  display: none;
+  background-image: url(../../src/img/button_up.png);
+  background-size: cover;
+}
+.scrollUp:hover {
+opacity: 0.7;
+transition: .5s all ease;
+}

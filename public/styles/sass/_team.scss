@@ -1,0 +1,152 @@
+.team {
+  width: 100%;
+  background-color: #e7f1f8;
+  .content-wrap {
+    max-width: 1035px;
+    width: 100%;
+    min-height: 914px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .team-header {
+      margin-top: 119px;
+      margin-bottom: 78px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: #3c4761;
+      &__title {
+        text-align: center;
+        font-size: 41.3px;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin-bottom: 22px;
+      }
+      &__note {
+        font-size: 18.6px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        margin-top: 25px;
+        text-align: center;
+      }
+    }
+    .team-content {
+      width: 100%;
+      min-height: 490px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-flow: row wrap;
+      margin-bottom: 100px;
+      &__teammate {
+        max-width: 206px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 1;
+        .profile-photo {
+          width: 100%;
+          &__img {
+            max-width: 200px;
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 41px;
+            filter: grayscale(0.5);
+            flex-shrink: 1;
+          }
+          &__img:hover {
+            cursor: pointer;
+            filter: none;
+            transition: 0.3s all ease;
+          }
+        }
+        .teammate-info {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          flex-shrink: 1;
+          &__name {
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            color: #27283d;
+            margin-bottom: 15px;
+          }
+          &__position {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #30bae7;
+            margin-bottom: 26px;
+          }
+          &__description {
+            min-height: 112px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            color: #3c4761;
+            margin-bottom: 31px;
+          }
+          &__links {
+            width: 100%;
+            .links {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              .link {
+                margin-right: 12px;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+                }
+              }
+              .link:last-child {
+                margin-right: 0;
+              }
+              .links-icon:hover {
+                cursor: pointer;
+                transform: rotateZ(360deg);
+                transition: transform .5s ease-in-out;
+              }
+              .fb-icon:hover {
+                box-shadow: 0px 0px 15px 1px #3b5998;
+              }
+              .twitter-icon:hover {
+                box-shadow: 0px 0px 15px 1px #30bae7;
+              }
+              .linkedIn-icon:hover {
+                box-shadow: 0px 0px 15px 1px #2867b2;
+              }
+              .mail-icon:hover {
+                box-shadow: 0px 0px 15px 1px #dd4b39;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
