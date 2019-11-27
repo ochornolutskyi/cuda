@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cuda</title>
-	<link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="/styles/style.css" type="text/css">
-</head>
+<%- include partials/head.ejs %>
 
 <body>
+
 	<div class="wrapper">
 		<div class="content">
+			<a href="#" class="scrollUp"></a>
 			<%- include partials/header.ejs %>
 			<%- include partials/services.ejs %>
 			<%- include partials/team.ejs %>
@@ -20,11 +12,11 @@
 			<%- include partials/portfolio.ejs %>
 			<%- include partials/about.ejs %>
 			<%- include partials/contact.ejs %>
+			<%- include partials/footer.ejs %>
 		</div>
-		<%- include partials/footer.ejs %>
 	</div>
-	<a href="#" class="scrollUp"></a>
 	<script src="/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="/slick/slick.min.js" type="text/javascript"></script>
 	<script src="/js/main.js" type="text/javascript"></script>
 </body>
 

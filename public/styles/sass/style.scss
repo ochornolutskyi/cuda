@@ -30,7 +30,7 @@ a {
   display: block;
   text-decoration: none;
 }
-a:focus{
+a:focus {
   outline: none;
 }
 img {
@@ -40,7 +40,7 @@ button {
   padding: 0;
   cursor: pointer;
 }
-button:focus{
+button:focus {
   outline: none;
 }
 .content-wrap {
@@ -92,10 +92,27 @@ button:focus{
   right: 35px;
   border-radius: 50%;
   display: none;
-  background-image: url(../../src/img/button_up.png);
+  background-image: url(../../src/img/button_arrow.png);
   background-size: cover;
 }
 .scrollUp:hover {
-opacity: 0.7;
-transition: .5s all ease;
+  opacity: 0.7;
+  transition: 0.5s all ease;
+}
+.back-button {
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.3;
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  border-radius: 50%;
+  background-image: url(../../src/img/button_arrow.png);
+  background-size: cover;
+  transform: rotate(-90deg);
+}
+.back-button:hover {
+  opacity: 0.7;
+  transition: 0.5s all ease;
 }
