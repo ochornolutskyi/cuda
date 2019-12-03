@@ -8,29 +8,22 @@
       </div>
       <nav id="nav" class="header-head__nav">
         <ul class="nav-ul">
+          <% header.nav.forEach(function(item){ %>
           <li class="nav-ul__li">
-            <a class="nav-ul__li-a" href="/">Home</a>
+            <% if(item.id) { %>
+            <a id="<%= item.id %>" class="nav-ul__li-a" href="<%= item.href %>"><%= item.name %> </a>
+            <% } else {%>
+            <a class="nav-ul__li-a" href="<%= item.href %>"><%= item.name %> </a>
+            <% } %>
           </li>
-          <li class="nav-ul__li">
-            <a class="nav-ul__li-a" href="#about">About</a>
-          </li>
-          <li class="nav-ul__li">
-            <a class="nav-ul__li-a" href="#portfolio">Work</a>
-          </li>
-          <li class="nav-ul__li">
-            <a id="blogLink" class="nav-ul__li-a" href="#">Blog</a>
-          </li>
-          <li class="nav-ul__li">
-            <a class="nav-ul__li-a" href="#contact">Contact</a>
-          </li>
+          <%  });%>
         </ul>
       </nav>
     </div>
     <div class="header-content">
-      <h1 class="header-content__title">Hi there! We are the new kids on the block and we build
-        awesome websites and mobile apps.</h1>
+      <h1 class="header-content__title"><%= header.content %></h1>
       <a class="header-content__button" href="#contact">Work with
-          us!
+        us!
       </a>
     </div>
   </div>

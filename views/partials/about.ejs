@@ -1,53 +1,24 @@
 <div id="about" class="about">
   <div class="content-wrap">
     <div class="about-header">
-      <h2 class="about-header__title">WHAT POEPLE SAY ABOUT US</h2>
+      <h2 class="about-header__title"><%= about.headerTitle %></h2>
       <div class="dividingLine"></div>
-      <div class="about-header__note">Our clients love us!</div>
+      <div class="about-header__note"><%= about.headerNote %></div>
     </div>
     <div class="about-content">
       <div class="about-content__slider">
+        <% about.contentItems.forEach(function(item){ %>
         <div class="about-slide">
-          <img class="about-slide__photo" src="../src/img/about/iman.jpg" alt="photo">
+          <img class="about-slide__photo" src="<%= item.aboutPhotoSrc %>" alt="photo">
           <div class="about-slide__info">
-            <div class="about-slide__info-text">“Nullam dapibus blandit orci, viverra gravida dui lobortis
-              eget.
-              Maecenas fringilla urna eu nisl scelerisque.”</div>
-            <div class="about-slide__info-name">Chanel Iman</div>
-            <div class="about-slide__info-position">CEO of Pinterest</div>
+            <p class="about-slide__info-text">"<%= item.aboutText %>"</p>
+            <p class="about-slide__info-name"><%= item.aboutName %></p>
+            <p class="about-slide__info-position"><%= item.aboutPosition %></p>
           </div>
         </div>
-        <div class="about-slide">
-          <img class="about-slide__photo" src="../src/img/about/lima.jpg" alt="photo">
-          <div class="about-slide__info">
-            <div class="about-slide__info-text">“Vivamus luctus urna sed urna ultricies ac tempor dui
-              sagittis. In
-              condimentum facilisis porta.”</div>
-            <div class="about-slide__info-name">ADRIANA LIMA</div>
-            <div class="about-slide__info-position">Founder of Instagram</div>
-          </div>
-        </div>
-        <div class="about-slide">
-          <img class="about-slide__photo" src="../src/img/about/anne.png" alt="photo">
-          <div class="about-slide__info">
-            <div class="about-slide__info-text">“Vivamus luctus urna sed urna ultricies ac tempor dui
-              sagittis. In
-              condimentum facilisis porta.”</div>
-            <div class="about-slide__info-name">ANNE HATHAWAY</div>
-            <div class="about-slide__info-position">Lead Designer at Behance</div>
-          </div>
-        </div>
-        <div class="about-slide">
-          <img class="about-slide__photo" src="../src/img/about/stone.jpeg" alt="photo">
-          <div class="about-slide__info">
-            <div class="about-slide__info-text">“Phasellus non purus vel arcu tempor commodo. Fusce semper,
-              purus
-              vel luctus molestie, risus sem cursus neque.”</div>
-            <div class="about-slide__info-name">EMMA STONE</div>
-            <div class="about-slide__info-position">Co-Founder of Shazam</div>
-          </div>
-        </div>
+        <% }) %>
       </div>
     </div>
   </div>
+</div>
 </div>
