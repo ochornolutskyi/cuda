@@ -311,7 +311,7 @@ app.get("/", function(req, res) {
     about
   });
 });
-
+//fixme the slashes
 app.post("/", function(req, res) {
   if (!req.body.username && req.body.email && req.body.text)
     return res.render("contact", {
