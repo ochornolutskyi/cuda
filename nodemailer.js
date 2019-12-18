@@ -13,7 +13,7 @@ const transporter = nodemailer.createTransport({
 const mailer = function(message){
   transporter.sendMail(message, function(err, info){
     if(err) return console.log(err);
-    console.log('Emai sent to: ', info);
+    console.log('Email sent to: ', info);
   });
 }
 
