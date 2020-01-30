@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;;
 const bodyParser = require("body-parser");
 const mailer = require("./nodemailer");
 const MongoClient = require("mongodb").MongoClient;
@@ -382,7 +382,7 @@ MongoClient.connect(
       return console.log(err);
     }
     db = database;
-    app.listen(port, function() {
+    app.listen(PORT, function() {
       console.log("server starting on 3000 port");
     });
   }
